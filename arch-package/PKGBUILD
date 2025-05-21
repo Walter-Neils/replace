@@ -1,0 +1,11 @@
+pkgname=("win-replace")
+pkgver="1.0.0"
+pkgrel="1"
+pkgdec="'replace' command"
+arch=("x86_64")
+source=("replace")
+sha512sums=("SKIP")
+package_win-replace() {
+  mkdir -p "${pkgdir}/usr/bin"
+  cp ${srcdir}/replace "${pkgdir}/usr/bin/"
+}
